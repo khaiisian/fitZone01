@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1D284AF5-3508-4F22-9F9F-498DD9899FC5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>fitZone01</RootNamespace>
+    <AssemblyName>fitZone01</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>1152495.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="fitZone01User.cs" />
+    <Compile Include="CyclingEx.cs" />
+    <Compile Include="Database_class.cs" />
+    <Compile Include="fitZone01 Fitness Tracker Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fitZone01 Fitness Tracker Form.Designer.cs">
+      <DependentUpon>fitZone01 Fitness Tracker Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExerciseClass.cs" />
+    <Compile Include="fitZone01_User_Guide.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fitZone01_User_Guide.Designer.cs">
+      <DependentUpon>fitZone01_User_Guide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalData.cs" />
+    <Compile Include="fitZone01LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fitZone01LoginForm.designer.cs">
+      <DependentUpon>fitZone01LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JoggingEx.cs" />
+    <Compile Include="met_to_type.cs" />
+    <Compile Include="fitZone01Person.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="fitZone01RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fitZone01RegisterForm.designer.cs">
+      <DependentUpon>fitZone01RegisterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fitZone01startForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fitZone01startForm.designer.cs">
+      <DependentUpon>fitZone01startForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SkippingRopeEX.cs" />
+    <Compile Include="Type_MET.cs" />
+    <Compile Include="SwimmingEx.cs" />
+    <Compile Include="fitZone01ProfileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fitZone01ProfileForm.Designer.cs">
+      <DependentUpon>fitZone01ProfileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WalkingEx.cs" />
+    <Compile Include="YogaEx.cs" />
+    <EmbeddedResource Include="fitZone01 Fitness Tracker Form.resx">
+      <DependentUpon>fitZone01 Fitness Tracker Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fitZone01LoginForm.resx">
+      <DependentUpon>fitZone01LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fitZone01_User_Guide.resx">
+      <DependentUpon>fitZone01_User_Guide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="fitZone01RegisterForm.resx">
+      <DependentUpon>fitZone01RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fitZone01startForm.resx">
+      <DependentUpon>fitZone01startForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fitZone01ProfileForm.resx">
+      <DependentUpon>fitZone01ProfileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1152495.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
